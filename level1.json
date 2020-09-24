@@ -1,0 +1,96 @@
+{
+"intents": [
+					{
+						"tag": "l1py1",
+						"patterns": ["python"],
+						"responses":["Is Python case sensitive when dealing with identifiers?"],
+						"options":["yes","no","machine dependent","none of the mentioned"],
+						"key":"identifier",
+						"answer":"yes",
+						"reward":1
+					},
+					{
+						"tag": "l1py2",
+						"patterns": ["identifier"],
+						"responses":["What is the maximum possible length of an identifier?"],
+						"options":["31 characters","63 characters","79 characters","none of the mentioned"],
+						"key":"keyword",
+						"answer":"none of the mentioned",
+						"reward":1
+					},
+					{
+						"tag": "l1py3",
+						"patterns": ["keyword"],
+						"responses":["Which of the following is not a keyword?"],
+						"options":["eval","assert","nonlocal","pass"],
+						"key":"core data",
+						"answer":"eval",
+						"reward":1
+					},
+					{
+						"tag": "l1py4",
+						"patterns": ["core data"],
+						"responses":["Which of these in not a core data type?"],
+						"options":["Lists","Dictionary","Tuples","Class"],
+						"key":"executed in shell",
+						"answer":"Class",
+						"reward":2
+					},
+					{
+						"tag": "l1py5",
+						"patterns": ["executed in shell"],
+						"responses":["Given a function that does not return any value, What value is thrown by default when executed in shell."],
+						"options":["int","bool","void","None"],
+						"key":"key and value",
+						"answer":"None",
+						"reward":2
+					},
+					{
+						"tag": "l1py6",
+						"patterns": ["key and value"],
+						"responses":["In order to store values in terms of key and value we use what core data type."],
+						"options":["list","tuple","class","dictionary"],
+						"key":"arithmetic operators",
+						"answer":"dictionary",
+						"reward":2
+					},
+					{
+						"tag": "l1py7",
+						"patterns": ["arithmetic operators"],
+						"responses":["What arithmetic operators cannot be used with strings?"],
+						"options":["+","*","-","All of the mentioned"],
+						"key":"listExample",
+						"answer":"-",
+						"reward":3
+					},
+					{
+						"tag": "l1py8",
+						"patterns": ["listExample"],
+						"responses":["Suppose listExample is [‘h’,’e’,’l’,’l’,’o’], what is len(listExample)?"],
+						"options":["5","4","None","Error"],
+						"key":"sum(list1)",
+						"answer":"5",
+						"reward":3
+					},
+					{
+						"tag": "l1py9",
+						"patterns": ["sum(list1)"],
+						"responses":["Suppose list1 is [1, 5, 9], what is sum(list1)?"],
+						"options":["1","9","15","error"],
+						"key":"Suppose list1",
+						"answer":"15",
+						"reward":4
+					},
+					{
+						"tag": "l1py10",
+						"patterns": ["Suppose list1"],
+						"responses":["Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1]?"],
+						"options":["Error","None","25","2"],
+						"key":"level2",
+						"answer":"25",
+						"reward":5
+					}
+				]
+}
+
+
